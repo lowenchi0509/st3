@@ -74,8 +74,8 @@ def callback(request):
                     elif mtext == '@彈性配置':
                         func.sendFlex(event)   
                                                
-                    elif mtext[:3] == '###' and len(mtext) > 3:
-                         func.manageForm(event, mtext)
+                    #elif mtext[:3] == '###' and len(mtext) > 3:
+                        # func.manageForm(event, mtext)
     
     
             if isinstance(event, PostbackEvent):  #PostbackTemplateAction觸發此事件
