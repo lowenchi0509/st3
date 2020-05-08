@@ -99,7 +99,7 @@ def sendButton(event):  #按鈕樣版
         message = TemplateSendMessage(
             alt_text='按鈕樣板',
             template=ButtonsTemplate(
-                    thumbnailImageUrl  =  'https =//i.imgur.com/ZGaXkKd.jpg' ,
+                    thumbnailImageUrl  =  'https://i.imgur.com/ZGaXkKd.jpg' ,
                     title  =  'demo' ,
                     text  =  'pizza demo' ,
                 actions=[
@@ -109,7 +109,7 @@ def sendButton(event):  #按鈕樣版
                     ),
                     URITemplateAction(  #開啟網頁
                         label  =  'website mcu' ,
-                        uri  =  'https =//web.mcu.edu.tw/'
+                        uri  =  'https://web.mcu.edu.tw/'
                     ),
                     PostbackTemplateAction(  #執行Postback功能,觸發Postback事件
                         label='回傳訊息',  #按鈕文字
