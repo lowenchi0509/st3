@@ -71,7 +71,7 @@ def hello3 (request,username):
 def index(request):
                 now=datetime.now()
                 username="daphne lo" 
-                return render(request,"index_form.html",locals())
+                return render(request,"hotel_form.html",locals())
 
 	
 	
