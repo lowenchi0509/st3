@@ -7,7 +7,8 @@ class student(models.Model):
 	cEmail = models.EmailField(max_length=100, blank=True, default='')
 	cPhone = models.CharField(max_length=50, blank=True, default='')
 	cAddr = models.CharField(max_length=255,blank=True, default='')
-	
+    def __str__(self):
+	return self.cName	
 
 class users(models.Model):
     uid = models.CharField(max_length=50, null=False)
@@ -23,5 +24,4 @@ class booking(models.Model):
     datein = models.CharField(max_length=20, null=False)
     dateout = models.CharField(max_length=20, null=False)
     
-	def __str__(self):
-		return self.cName
+
