@@ -7,5 +7,5 @@ class student(models.Model):
 	cEmail = models.EmailField(max_length=100, blank=True, default='')
 	cPhone = models.CharField(max_length=50, blank=True, default='')
 	cAddr = models.CharField(max_length=255,blank=True, default='')
-    def __str__(self):
-	return self.cName	
+def __str__(self):
+    return self.cName	
