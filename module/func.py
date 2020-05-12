@@ -99,10 +99,10 @@ def sendButton(event):  #按鈕樣版
         message = TemplateSendMessage(
             alt_text='按鈕樣板',
             template=ButtonsTemplate(
-                    thumbnailImageUrl  =  "https://i.imgur.com/ZGaXkKd.jpg" ,
+                    thumbnailImageUrl  ='https://i.imgur.com/ZGaXkKd.jpg' ,
                     title  =  'demo' ,
                     text  =  'pizza demo' ,
-                actions=[
+            actions=[
                     MessageTemplateAction(  #顯示文字計息
                         label='文字訊息',
                         text='@購買披薩'
