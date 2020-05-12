@@ -7,3 +7,4 @@ class users(models.Model):
     
 def __str__(self):
    return self.uid
+admin.site.register(users,usersAdmin)
