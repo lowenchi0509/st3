@@ -9,12 +9,12 @@ class studentAdmin(admin.ModelAdmin):
 	search_fields=('cName',)
 	ordering=('id',)
 	
-admin.site.register(student,studentAdmin)
+#admin.site.register(student,studentAdmin)
 
 
 class usersAdmin(admin.ModelAdmin):
     list_display=('uid','datatest')
-admin.site.register(users,usersAdmin)
+#admin.site.register(users,usersAdmin)
 
 
 
