@@ -1,6 +1,7 @@
 from django.contrib import admin
 from studentsapp.models import student
-
+from formapi.models import users
+from formapi.models import users
 class studentAdmin(admin.ModelAdmin):
     # 第三種方式，加入 ModelAdmin 類別，定義顯示欄位、欄位過濾資料、搜尋和排序
 	list_display=('id','cName','cSex','cBirthday','cEmail','cPhone','cAddr')
@@ -9,6 +10,13 @@ class studentAdmin(admin.ModelAdmin):
 	ordering=('id',)
 	
 admin.site.register(student,studentAdmin)
+
+
+class usersAdmin(admin.ModelAdmin):
+    list_display=('uid','datatest')
+admin.site.register(users,usersAdmin)
+
+
 
 	
 # 第一種方式，未加入 ModelAdmin 類別 
