@@ -6,8 +6,7 @@ from linebot.models import TemplateSendMessage,ConfirmTemplate, MessageTemplateA
 from linebot.models import ImagemapSendMessage, BaseSize, MessageImagemapAction, URIImagemapAction, ImagemapArea, TemplateSendMessage, ButtonsTemplate, DatetimePickerTemplateAction
 from linebot.models import TextSendMessage, AudioSendMessage, VideoSendMessage
 from linebot.models import BubbleContainer, ImageComponent, BoxComponent, TextComponent, IconComponent, ButtonComponent, SeparatorComponent, FlexSendMessage, URIAction
-from linebot.models import TextSendMessage, ImageSendMessage, LocationSendMessage, TemplateSendMessage,\
-    ButtonsTemplate, URITemplateAction, ConfirmTemplate, PostbackTemplateAction
+from linebot.models import TextSendMessage, ImageSendMessage, LocationSendMessage, TemplateSendMessage,ButtonsTemplate, URITemplateAction, ConfirmTemplate, PostbackTemplateAction
 
 from hotelapi.models import booking, users
 
