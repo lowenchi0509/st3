@@ -25,10 +25,10 @@ def callback(request):
         for event in events:
            
             if isinstance(event, MessageEvent):
-                user_id = event.source.user_id
-                if not (users.objects.filter(uid=user_id).exists()):
-                unit = users.objects.create(uid=user_id)
-                unit.save()
+               # user_id = event.source.user_id
+                #if not (users.objects.filter(uid=user_id).exists()):
+               # unit = users.objects.create(uid=user_id)
+               # unit.save()
                     
                     
                 if isinstance(event.message, TextMessage):
@@ -85,13 +85,13 @@ def callback(request):
                         func.manageForm(event, mtext)
     
     
-            if isinstance(event, PostbackEvent):  #PostbackTemplateAction觸發此事件
-                backdata = dict(parse_qsl(event.postback.data))  #取得data資料
-                if backdata.get('action') == 'sell':
-                    func.sendData_sell(event, backdata)
+           #if isinstance(event, PostbackEvent):  #PostbackTemplateAction觸發此事件
+              #  backdata = dict(parse_qsl(event.postback.data))  #取得data資料
+             #   if backdata.get('action') == 'sell':
+              #      func.sendData_sell(event, backdata)
 
-            else:            
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text=event.message.text))
+           # else:            
+              #  line_bot_api.reply_message(event.reply_token,TextSendMessage(text=event.message.text))
     
         return HttpResponse()
 
