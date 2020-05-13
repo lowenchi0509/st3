@@ -20,7 +20,7 @@ from studentsapp import views
 from django.urls import include
 from formapi import views as v2
 #from func1api import views as v3
-#from hotelapi import views as v4
+from hotelapi import views as v4
 
 
 urlpatterns = [
@@ -34,7 +34,7 @@ urlpatterns = [
     url(r'^index/(\w+)/$',views.index),
     url(r'^hello3/(\w+)/$',views.hello3),
     url(r'^callback/', include(('studentsapp.urls', 'studentsapp'), namespace='callback')),
-   # url(r'^callback', v4.callback),
+    url(r'^callback', v4.callback),
    # url(r'^callback', v3.callback),
     url(r'^callback', v2.callback),
 ]
