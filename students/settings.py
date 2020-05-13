@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'studentsapp',
-    'formapi', # 新增的 app
+    #'formapi', # 新增的 app
     'func1api',
     'hotelapi',
 ]
