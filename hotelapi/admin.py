@@ -4,6 +4,6 @@ from hotelapi.models import booking,users
 class usersAdmin(admin.ModelAdmin):
     list_display=('uid','created_time')
 admin.site.register(users,usersAdmin)
-class usersAdmin(admin.ModelAdmin):
+class bookingAdmin(admin.ModelAdmin):
     list_display=('bid','roomtype','roomamount',  'datein', 'dateout' )
 admin.site.register(booking,bookingAdmin)
