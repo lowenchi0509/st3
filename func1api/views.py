@@ -23,7 +23,14 @@ def callback(request):
             return HttpResponseBadRequest()
 
         for event in events:
+           
             if isinstance(event, MessageEvent):
+                user_id = event.source.user_id
+                if not (users.objects.filter(uid=user_id).exists()):
+                unit = users.objects.create(uid=user_id)
+                unit.save()
+                    
+                    
                 if isinstance(event.message, TextMessage):
                     mtext = event.message.text
                     if mtext == '@傳送文字':
@@ -90,3 +97,4 @@ def callback(request):
 
     else:
         return HttpResponseBadRequest()
+    
